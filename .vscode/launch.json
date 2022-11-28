@@ -1,0 +1,45 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'Dinning_Philosophers'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=Dinning_Philosophers",
+                    "--package=Dinning_Philosophers"
+                ],
+                "filter": {
+                    "name": "Dinning_Philosophers",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'Dinning_Philosophers'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=Dinning_Philosophers",
+                    "--package=Dinning_Philosophers"
+                ],
+                "filter": {
+                    "name": "Dinning_Philosophers",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
